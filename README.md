@@ -1,7 +1,7 @@
 # 🚀 Ahmed Osama — Backend-Focused Software Engineer
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/A7hmed111/portfolio/main/assets/images/me.png" width="200" style="border-radius:50%;" alt="Ahmed Osama">
+  <img src="https://raw.githubusercontent.com/A7hmed111/portfolio/main/assets/images/me.webp" width="200" style="border-radius:50%;" alt="Ahmed Osama">
 </p>
 
 <p align="center">
