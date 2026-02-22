@@ -195,7 +195,10 @@ body {
 }
 
 .highlight {
-  color: var(--primary);
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-subtitle {
@@ -748,6 +751,10 @@ body {
 .view-code-btn:hover {
   background: var(--accent);
   color: #000;
+}
+
+.view-code-btn:active {
+  transform: scale(0.95);
 }
 
 .project-content {
