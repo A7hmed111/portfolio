@@ -23,6 +23,9 @@
 /* ============================= */
 /* Global */
 /* ============================= */
+* {
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
@@ -34,6 +37,16 @@ body {
   font-family: 'Poppins', sans-serif;
   transition: background 0.4s ease, color 0.4s ease;
   overflow-x: hidden;
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background: var(--primary);
+  z-index: 2000;
 }
 
 .section {
@@ -59,8 +72,7 @@ body {
   width: 100%;
   top: 0;
   z-index: 999;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(244, 241, 234, 0.85);
   transition: 0.4s ease;
 }
 
@@ -120,6 +132,11 @@ body {
   border-radius: 15px;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.navbar-scrolled {
+  padding: 10px 0 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* ============================= */
@@ -237,9 +254,17 @@ body {
 .hero-img:hover {
   transform: scale(1.03);
 }
+
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 /* ============================= */
@@ -500,7 +525,7 @@ body {
       transparent,
       rgba(255, 255, 255, 0.4),
       transparent);
-  animation: shine 2s infinite;
+  animation: shine 2s ease-in-out 1;
 }
 
 @keyframes shine {
@@ -519,17 +544,6 @@ body {
     background: rgba(255, 255, 255, 0.7);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
-  }
-}
-
-/* Light Mode Glass Upgrade */
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-
-  [data-theme="light"] .skill-card,
-  [data-theme="light"] .project-card {
-    background: rgba(255, 255, 255, 0.7);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
   }
 }
 
@@ -640,6 +654,7 @@ body {
   font-size: 0.85rem;
   opacity: 0.8;
 }
+
 /* ============================= */
 /* Soft Skills Section */
 /* ============================= */
@@ -670,6 +685,7 @@ body {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px var(--shadow);
 }
+
 /* ============================= */
 /* Projects Modern */
 /* ============================= */
@@ -707,7 +723,7 @@ body {
 .project-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -749,18 +765,20 @@ body {
 .code-modal {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0, 0, 0, 0.85);
   display: none;
   align-items: center;
   justify-content: center;
   z-index: 9999;
 }
+
 .code-modal-content {
   max-width: 95vw;
   max-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .code-modal-content img {
@@ -890,7 +908,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -923,7 +941,7 @@ body {
     display: none;
   }
 
-  .profile-img {
+  .hero-img {
     margin-top: 40px;
   }
 }
