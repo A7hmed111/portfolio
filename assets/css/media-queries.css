@@ -1,0 +1,32 @@
+/* ============================= */
+/* Responsive Clean */
+/* ============================= */
+
+@media (max-width: 991px) {
+
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-img {
+    max-width: 320px;
+  }
+
+  .about-highlights {
+    justify-content: center;
+  }
+
+  .contact-wrapper {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-content h1 {
+    font-size: clamp(3rem, 3vw, 4rem);
+  }
+}

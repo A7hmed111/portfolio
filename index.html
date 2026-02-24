@@ -1,364 +1,293 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!-- SEO -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Ahmed Osama | Software Engineer">
-  <meta property="og:description" content="Backend-focused engineer building scalable systems.">
   <title>Ahmed Osama | Software Engineer</title>
   <meta name="description"
     content="Ahmed Osama - Software Engineer focused on Backend Architecture, Scalable Systems, and Modern Frontend Development.">
   <meta name="keywords"
     content="Ahmed Osama, Software Engineer, Backend Developer, Frontend Developer, React, Java, Python">
   <meta name="author" content="Ahmed Osama">
-
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ahmed Osama | Software Engineer">
+  <meta property="og:description" content="Backend-focused engineer building scalable systems.">
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-
-  <!-- Google Font -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap -->
+  <!-- Styles -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- Devicon  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-  <!-- Main CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/media-queries.css">
+  <!-- Preload critical asset -->
   <link rel="preload" href="assets/images/me.webp" as="image">
 </head>
 
 <body>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress"></div>
 
   <!-- Navbar -->
-  <div class="scroll-progress"></div>
-  <nav class="navbar-custom">
-    <div class="container nav-wrapper">
-
-      <div class="logo">Ahmed</div>
-
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#why">Why Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme" title="Toggle Theme">
-        ☀️
+  <nav class="navbar navbar-expand-lg navbar-custom" aria-label="Main navigation">
+    <div class="container-lg">
+      <a class="navbar-brand" href="#">Ahmed</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-
+      <div class="collapse navbar-collapse justify-content-between" id="mainNavbar">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item mx-lg-2"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item mx-lg-2"><a class="nav-link" href="#why">Why Me</a></li>
+          <li class="nav-item mx-lg-2"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item mx-lg-2"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item mx-lg-2"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item mx-lg-2"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="btn btn-outline-success btn-sm ms-lg-3">☀️</button>
+      </div>
     </div>
   </nav>
 
   <!-- Hero -->
   <section class="hero-section">
-    <div class="container">
+    <div class="container-lg">
       <div class="row align-items-center">
-
         <div class="col-lg-6 hero-content">
-          <h1>
-            Ahmed <span class="highlight">Osama</span>
-          </h1>
-
+          <h1>Ahmed <span class="highlight">Osama</span></h1>
           <p class="hero-subtitle">
             Full Stack Engineer focused on scalable backend architecture and seamless frontend experiences.
           </p>
-
           <div class="hero-buttons">
-            <a href="#projects" class="btn-primary-hero">View Projects</a>
-            <a href="#contact" class="btn-outline-hero">Contact Me</a>
+            <a href="#projects" class="hero-btn hero-btn-primary">View Projects</a>
+            <a href="#contact" class="hero-btn hero-btn-outline">Contact</a>
           </div>
         </div>
-
         <div class="col-lg-6 text-center">
           <img src="assets/images/me.webp" class="hero-img" alt="Ahmed Osama" loading="eager" decoding="async">
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="section reveal">
-    <div class="container">
+  <section id="about" class="py-5 reveal">
+    <div class="container-lg">
       <div class="row align-items-center g-5">
-
-        <!-- Left Content -->
         <div class="col-lg-6">
           <h2 class="section-title">About Me</h2>
-
           <p class="about-text mt-4">
             I build systems with intention. Every project I work on starts with
             architecture, scalability, and security in mind before writing a single line of code.
           </p>
-
           <p class="about-text">
             My focus is on clean backend logic combined with modern frontend
             experiences. I care about performance, structure, and building products
             that are maintainable long term.
           </p>
-
           <div class="about-highlights mt-4">
             <div class="highlight-item">
               <span class="highlight-number">Clean</span>
               <span class="highlight-label">Architecture</span>
             </div>
-
             <div class="highlight-item">
               <span class="highlight-number">Scalable</span>
               <span class="highlight-label">Systems</span>
             </div>
-
             <div class="highlight-item">
               <span class="highlight-number">Modern</span>
               <span class="highlight-label">Frontend</span>
             </div>
           </div>
         </div>
-
-        <!-- Right Visual -->
-        <div class="col-lg-6 text-center">
-          <div class="about-card">
-            <h4>What I Focus On</h4>
-            <ul>
-              <li>System Design Thinking</li>
-              <li>Secure API Development</li>
-              <li>Structured Codebases</li>
-              <li>UI/UX Awareness</li>
-              <li>Continuous Learning</li>
+        <div class="col-lg-7 col-xl-6 d-flex justify-content-center">
+          <div class="about-card text-center">
+            <h3>What I Focus On</h3>
+            <ul class="concept-list mt-4">
+              <li><i class="fa-solid fa-diagram-project"></i><span>System Design Thinking</span></li>
+              <li><i class="fa-solid fa-shield-halved"></i><span>Secure API Development</span></li>
+              <li><i class="fa-solid fa-layer-group"></i><span>Structured Codebases</span></li>
+              <li><i class="fa-solid fa-object-group"></i><span>UI/UX Awareness</span></li>
+              <li><i class="fa-solid fa-book-open"></i><span>Continuous Learning</span></li>
             </ul>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <section id="why" class="section bg-alt reveal">
-    <div class="container">
+  <!-- Why Me -->
+  <section id="why" class="py-5 bg-alt reveal">
+    <div class="container-lg">
       <h2 class="section-title text-center">Why Me</h2>
-
       <div class="row g-4 mt-5">
-
         <div class="col-md-6 col-lg-3">
           <div class="card-modern why-card">
-            <div class="why-icon">
-              <i class="fas fa-layer-group"></i>
-            </div>
+            <div class="why-icon"><i class="fas fa-layer-group"></i></div>
             <h5>Architecture First</h5>
-            <p>
-              Every project starts with planning, layered structure, and scalability
-              before writing production code.
+            <p>Every project starts with planning, layered structure, and scalability before writing production code.
             </p>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-3">
           <div class="card-modern why-card">
-            <div class="why-icon">
-              <i class="fas fa-shield-alt"></i>
-            </div>
+            <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
             <h5>Security Driven</h5>
-            <p>
-              I design APIs and systems with authentication, validation,
-              and data protection in mind.
-            </p>
+            <p>I design APIs and systems with authentication, validation, and data protection in mind.</p>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-3">
           <div class="card-modern why-card">
-            <div class="why-icon">
-              <i class="fas fa-bolt"></i>
-            </div>
+            <div class="why-icon"><i class="fas fa-bolt"></i></div>
             <h5>Performance Focused</h5>
-            <p>
-              Clean logic, efficient structure, and minimal overhead
-              for real-world environments.
-            </p>
+            <p>Clean logic, efficient structure, and minimal overhead for real-world environments.</p>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-3">
           <div class="card-modern why-card">
-            <div class="why-icon">
-              <i class="fas fa-brain"></i>
-            </div>
+            <div class="why-icon"><i class="fas fa-brain"></i></div>
             <h5>Structured Thinking</h5>
-            <p>
-              Analytical problem-solving backed by logic,
-              not trial and error coding.
-            </p>
+            <p>Analytical problem-solving backed by logic, not trial and error coding.</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <section id="skills" class="section reveal">
-    <div class="container">
+  <!-- Skills -->
+  <section id="skills" class="py-5 reveal">
+    <div class="container-lg">
       <h2 class="section-title text-center">Technical Skills</h2>
-
       <div class="row g-4 mt-5">
-
         <!-- Frontend -->
-        <div class="col-lg-6">
+        <div class="col-md-6 col-xl-3">
           <div class="skill-group">
             <h4><i class="fas fa-code"></i> Frontend</h4>
-
             <div class="skill-item">
-              <i class="devicon-html5-plain colored"></i>
-              <span>HTML</span>
+              <i class="devicon-html5-plain colored"></i><span>HTML</span>
               <div class="progress">
                 <div class="progress-bar" data-width="95%"></div>
               </div>
             </div>
-
             <div class="skill-item">
-              <i class="devicon-css3-plain colored"></i>
-              <span>CSS</span>
+              <i class="devicon-css3-plain colored"></i><span>CSS</span>
               <div class="progress">
                 <div class="progress-bar" data-width="90%"></div>
               </div>
             </div>
-
             <div class="skill-item">
-              <i class="devicon-javascript-plain colored"></i>
-              <span>JavaScript</span>
+              <i class="devicon-javascript-plain colored"></i><span>JavaScript</span>
               <div class="progress">
                 <div class="progress-bar" data-width="80%"></div>
               </div>
             </div>
-
             <div class="skill-item">
-              <i class="devicon-react-original colored"></i>
-              <span>React (Learning)</span>
+              <i class="devicon-react-original colored"></i><span>React (Learning)</span>
+              <div class="progress">
+                <div class="progress-bar" data-width="60%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span>
+              <div class="progress">
+                <div class="progress-bar" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-typescript-plain colored"></i><span>TypeScript (Basics)</span>
               <div class="progress">
                 <div class="progress-bar" data-width="60%"></div>
               </div>
             </div>
           </div>
         </div>
-
         <!-- Backend -->
-        <div class="col-lg-6">
+        <div class="col-md-6 col-xl-3">
           <div class="skill-group">
             <h4><i class="fas fa-server"></i> Backend</h4>
-
             <div class="skill-item">
-              <i class="devicon-java-plain colored"></i>
-              <span>Java</span>
+              <i class="devicon-java-plain colored"></i><span>Java</span>
               <div class="progress">
                 <div class="progress-bar" data-width="85%"></div>
               </div>
             </div>
-
             <div class="skill-item">
-              <i class="devicon-cplusplus-plain colored"></i>
-              <span>C++</span>
+              <i class="devicon-cplusplus-plain colored"></i><span>C++</span>
               <div class="progress">
                 <div class="progress-bar" data-width="80%"></div>
               </div>
             </div>
-
             <div class="skill-item">
-              <i class="devicon-csharp-plain colored"></i>
-              <span>C#</span>
+              <i class="devicon-csharp-plain colored"></i><span>C#</span>
               <div class="progress">
                 <div class="progress-bar" data-width="75%"></div>
               </div>
             </div>
-
             <div class="skill-item">
-              <i class="devicon-python-plain colored"></i>
-              <span>Python</span>
+              <i class="devicon-python-plain colored"></i><span>Python</span>
               <div class="progress">
                 <div class="progress-bar" data-width="85%"></div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="card-modern skill-section">
-            <h4><i class="fas fa-tools"></i> Tools & Workflow</h4>
-
-            <div class="tools-grid mt-4">
-
-              <div class="tool-item" title="Git">
-                <i class="devicon-git-plain colored"></i>
-                <span>Git</span>
+            <div class="skill-item">
+              <i class="fas fa-database"></i><span>SQL</span>
+              <div class="progress">
+                <div class="progress-bar" data-width="80%"></div>
               </div>
-
-              <div class="tool-item" title="GitHub">
-                <i class="devicon-github-original"></i>
-                <span>GitHub</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-cubes"></i><span>OOP</span>
+              <div class="progress">
+                <div class="progress-bar" data-width="90%"></div>
               </div>
-
-              <div class="tool-item" title="VS Code">
-                <i class="devicon-vscode-plain colored"></i>
-                <span>VS Code</span>
-              </div>
-
-              <div class="tool-item" title="MySQL">
-                <i class="devicon-mysql-plain colored"></i>
-                <span>MySQL</span>
-              </div>
-
-              <div class="tool-item" title="Postman">
-                <i class="devicon-postman-plain colored"></i>
-                <span>Postman</span>
-              </div>
-
-              <div class="tool-item" title="Linux">
-                <i class="devicon-linux-plain"></i>
-                <span>Linux</span>
-              </div>
-
             </div>
           </div>
         </div>
-
-        <!-- Concepts -->
-        <div class="col-lg-6">
+        <!-- Tools -->
+        <div class="col-md-6 col-xl-3">
+          <div class="skill-group">
+            <h4><i class="fas fa-tools"></i> Tools & Workflow</h4>
+            <div class="tools-grid mt-4">
+              <div class="tool-item" title="Git"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+              <div class="tool-item" title="GitHub"><i class="devicon-github-original"></i><span>GitHub</span></div>
+              <div class="tool-item" title="VS Code"><i class="devicon-vscode-plain colored"></i><span>VS Code</span>
+              </div>
+              <div class="tool-item" title="MySQL"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+              <div class="tool-item" title="Postman"><i class="devicon-postman-plain colored"></i><span>Postman</span>
+              </div>
+              <div class="tool-item" title="Linux"><i class="devicon-linux-plain"></i><span>Linux</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Core Concepts -->
+        <div class="col-md-6 col-xl-3">
           <div class="skill-group">
             <h4><i class="fas fa-brain"></i> Core Concepts</h4>
-            <ul class="concept-list">
-              <li>Clean Architecture</li>
-              <li>REST APIs</li>
-              <li>Security Basics</li>
-              <li>System Design Thinking</li>
-              <li>Problem Solving</li>
+            <ul class="skills-concepts">
+              <li><span>Clean Architecture</span></li>
+              <li><span>REST APIs</span></li>
+              <li><span>Security Basics</span></li>
+              <li><span>System Design Thinking</span></li>
+              <li><span>Problem Solving</span></li>
+              <li><span>Design Patterns</span></li>
             </ul>
           </div>
         </div>
-
-
       </div>
     </div>
   </section>
-  <!-- soft skills -->
-  <section id="soft-skills" class="section reveal">
-    <div class="container text-center">
 
+  <!-- Soft Skills -->
+  <section id="soft-skills" class="py-5 reveal">
+    <div class="container-lg text-center">
       <h2 class="section-title mb-5">Soft Skills</h2>
-
       <div class="row justify-content-center g-4">
-
         <div class="col-md-4">
           <div class="card-modern soft-card">
             <i class="fas fa-lightbulb"></i>
@@ -366,7 +295,6 @@
             <p>Structured reasoning and logical decision-making in complex systems.</p>
           </div>
         </div>
-
         <div class="col-md-4">
           <div class="card-modern soft-card">
             <i class="fas fa-comments"></i>
@@ -374,7 +302,6 @@
             <p>Explaining technical concepts simply and collaborating effectively.</p>
           </div>
         </div>
-
         <div class="col-md-4">
           <div class="card-modern soft-card">
             <i class="fas fa-sitemap"></i>
@@ -382,7 +309,6 @@
             <p>Understanding how components interact within scalable architectures.</p>
           </div>
         </div>
-
         <div class="col-md-4">
           <div class="card-modern soft-card">
             <i class="fas fa-clock"></i>
@@ -390,7 +316,6 @@
             <p>Prioritizing tasks efficiently while maintaining quality delivery.</p>
           </div>
         </div>
-
         <div class="col-md-4">
           <div class="card-modern soft-card">
             <i class="fas fa-users"></i>
@@ -398,7 +323,6 @@
             <p>Working smoothly within teams and adapting to different workflows.</p>
           </div>
         </div>
-
         <div class="col-md-4">
           <div class="card-modern soft-card">
             <i class="fas fa-book"></i>
@@ -406,151 +330,121 @@
             <p>Constantly improving skills and adapting to new technologies.</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <section id="education" class="section reveal">
-    <div class="container text-center">
-      <h2 class="section-title">Education</h2>
-
-      <div class="education-card mt-5">
-        <h4>Bachelor of Software Engineering</h4>
-        <p class="edu-university">
-          Faculty of Computers & Information – Menoufia University
-        </p>
-        <span class="edu-date">2024 – 2028 (Expected)</span>
+  <!-- Education -->
+  <section id="education" class="py-5 reveal">
+    <div class="container-lg">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic background and continuous growth.</p>
       </div>
-
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="education-card">
+            <h4>Bachelor of Software Engineering</h4>
+            <div class="edu-university">Faculty of Computers & Information – Menoufia University</div>
+            <div class="edu-date">2024 – 2028 (Expected)</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <!-- Project -->
 
-  <section id="projects" class="section reveal">
-    <div class="container">
+  <!-- Projects -->
+  <section id="projects" class="py-5 reveal">
+    <div class="container-lg">
       <h2 class="section-title text-center mb-5">Projects</h2>
-
       <div class="row g-4">
-
-        <!-- Project 1 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6">
           <div class="project-card-modern">
             <div class="project-img-wrapper">
               <img src="assets/images/pro/AI Study Assistant.png" alt="AI Study Assistant" loading="lazy"
                 decoding="async">
               <div class="project-overlay">
-                <button class="view-code-btn" data-code="assets/images/pro/code-AiStudy.png">
-                  View Code
-                </button>
+                <button class="view-code-btn" data-code="assets/images/pro/code-AiStudy.png">View Code</button>
               </div>
             </div>
             <div class="project-content">
               <h5>AI Study Assistant</h5>
-              <p>
-                Smart learning assistant with quizzes, flashcards,
-                and document-based study workflow.
-              </p>
+              <p>Smart learning assistant with quizzes, flashcards, and document-based study workflow.</p>
             </div>
           </div>
         </div>
-
-        <!-- Project 2 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6">
           <div class="project-card-modern">
             <div class="project-img-wrapper">
-              <img src="assets/images/pro/Job Recruitment Management System.png" alt="Job System" loading="lazy"
-                decoding="async">
+              <img src="assets/images/pro/Job Recruitment Management System.png" alt="Job Recruitment System"
+                loading="lazy" decoding="async">
               <div class="project-overlay">
-                <button class="view-code-btn" data-code="assets/images/pro/code-jobRec.png">
-                  View Code
-                </button>
+                <button class="view-code-btn" data-code="assets/images/pro/code-jobRec.png">View Code</button>
               </div>
             </div>
             <div class="project-content">
               <h5>Job Recruitment System</h5>
-              <p>
-                Recruitment management system for handling
-                applicants, filtering, and job processes.
-              </p>
+              <p>Recruitment management system for handling applicants, filtering, and job processes.</p>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Code Modal -->
-  <div class="code-modal" id="codeModal" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="code-modal-content">
-      <button class="close-modal" aria-label="Close Modal">&times;</button>
-      <img id="codeImage" src="" alt="Project Code">
-    </div>
-  </div>
-
   <!-- Contact -->
-  <section id="contact" class="section bg-alt reveal">
-    <div class="container text-center">
+  <section id="contact" class="py-5 bg-alt reveal">
+    <div class="container-lg text-center">
       <h2 class="section-title">Contact Me</h2>
-
       <div class="contact-wrapper mt-5">
-
         <a href="mailto:aahmedosamaaa64@gmail.com" class="contact-item" aria-label="Send Email" title="Email Me">
           <i class="fas fa-envelope"></i>
         </a>
-
         <a href="https://github.com/A7hmed111" target="_blank" rel="noopener noreferrer" class="contact-item"
           aria-label="Visit GitHub" title="GitHub Profile">
           <i class="fab fa-github"></i>
         </a>
-
         <a href="https://www.linkedin.com/in/AhmedMohsen11" target="_blank" rel="noopener noreferrer"
           class="contact-item" aria-label="Visit LinkedIn" title="LinkedIn Profile">
           <i class="fab fa-linkedin-in"></i>
         </a>
-
         <a href="tel:01025660180" class="contact-item" aria-label="Call Me" title="Phone Number">
           <i class="fas fa-phone"></i>
         </a>
       </div>
     </div>
   </section>
-
+  <!-- Footer -->
   <footer class="footer-modern">
-    <div class="container">
-
+    <div class="container-lg">
       <div class="row gy-4 align-items-center">
-
-        <!-- Left -->
         <div class="col-lg-6 text-center text-lg-start">
           <h5 class="footer-name">Ahmed Osama</h5>
-          <p class="footer-tagline">
-            Full Stack Engineer building scalable systems with structured architecture.
-          </p>
+          <p class="footer-tagline">Full Stack Engineer building scalable systems with structured architecture.</p>
         </div>
-
-        <!-- Right -->
-        <div class="col-lg-6 text-center text-lg-end">
-          <div class="footer-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-          </div>
+        <div class="col-lg-6 text-center text-lg-end footer-links">
+          <ul class="nav justify-content-center justify-content-lg-end">
+            <li class="nav-item"><a class="nav-link px-2" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link px-2" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link px-2" href="#projects">Projects</a></li>
+          </ul>
         </div>
-
       </div>
-
       <hr class="footer-divider">
-
-      <div class="text-center footer-bottom">
-        <small>
-          © 2026 Ahmed Osama. All rights reserved.
-        </small>
+      <div class="footer-bottom">
+        <small>© 2026 Ahmed Osama. All rights reserved.</small>
       </div>
-
     </div>
   </footer>
+  <!-- Code Modal -->
+  <div class="code-modal" id="codeModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="code-modal-content">
+      <button class="close-modal" aria-label="Close modal">&times;</button>
+      <img id="codeImage" src="" alt="Project Code Preview">
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js" defer></script>
 </body>
 
