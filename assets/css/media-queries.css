@@ -1,30 +1,61 @@
-/* ============================= */
-/* Responsive Clean */
-/* ============================= */
-
 @media (max-width: 991px) {
 
+  /* Hero Layout */
   .hero-section {
     text-align: center;
+    padding-top: 110px;
+    padding-bottom: 50px;
   }
 
+  .hero-content h1 {
+    font-size: 2.3rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 0 auto 25px;
+  }
+
+  /* Buttons */
   .hero-buttons {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
   }
 
+  .hero-btn {
+    width: 85%;
+    max-width: 260px;
+  }
+
+  /* Image */
   .hero-img {
-    max-width: 320px;
+    max-width: 260px;
+    margin-top: 35px;
   }
 
+  /* About */
   .about-highlights {
     justify-content: center;
   }
 
+  /* Contact */
   .contact-wrapper {
-    gap: 20px;
+    gap: 18px;
   }
 }
 
+/* Large Screens */
+@media (min-width: 1200px) {
+
+  .hero-content h1 {
+    font-size: 3.6rem;
+  }
+
+}
 @media (min-width: 1200px) {
   .hero-content h1 {
     font-size: clamp(3rem, 3vw, 4rem);
