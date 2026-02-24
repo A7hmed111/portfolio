@@ -1,3 +1,7 @@
+/* ============================= */
+/* Responsive Clean - Fixed */
+/* ============================= */
+
 @media (max-width: 991px) {
 
   /* Hero Layout */
@@ -56,8 +60,46 @@
   }
 
 }
-@media (min-width: 1200px) {
+/* ============================= */
+/* Tablet Responsive */
+/* ============================= */
+
+@media (min-width: 769px) and (max-width: 991px) {
+
   .hero-content h1 {
-    font-size: clamp(3rem, 3vw, 4rem);
+    font-size: 2.6rem;
   }
+
+  .hero-img {
+    max-width: 350px;
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card-modern,
+  .skill-group {
+    padding: 35px;
+  }
+
+}
+/* ============================= */
+/* Large Screens */
+/* ============================= */
+
+@media (min-width: 1400px) {
+
+  .container {
+    max-width: 1300px;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-img {
+    max-width: 420px;
+  }
+
 }
